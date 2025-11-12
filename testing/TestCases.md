@@ -2,15 +2,15 @@
 
 ## Manual Test Cases
 
-| Test ID | Description | Steps | Expected Result | Actual Result | Status |
-|---------|------------|-------|----------------|---------------|--------|
-| TC001 | Submit empty waste pickup form | Go to Home → leave all fields empty → Click Submit | Validation errors should appear for all required fields | Date field doesn’t show error | ❌ Fail |
-| TC002 | Submit valid waste pickup form | Fill all required fields correctly → Click Submit | Form submitted successfully → Success message displayed | Works correctly | ✅ Pass |
-| TC003 | Filter requests by location | Open Dashboard → Apply filter “Eldoret” | Only Eldoret requests displayed | Shows Nairobi requests as well | ❌ Fail |
-| TC004 | Update request status in Admin Panel | Open Admin Panel → Click "Mark as Scheduled" | UI should update immediately | UI doesn’t refresh automatically | ❌ Fail |
-| TC005 | Enter long text input | Enter 500+ characters in form fields → Submit | Layout should handle gracefully | Layout breaks slightly | ⚠️ Partial |
-| TC006 | Responsive design | Resize browser or open on mobile emulator | Layout adjusts correctly for all screen sizes | Works mostly fine | ✅ Pass |
-| TC007 | Feedback submission | Go to Feedback page → Enter valid Request ID → Submit | Success message displayed | Works correctly | ✅ Pass |
+| Test ID | Description |Related Defect | Steps | Expected Result | Actual Result | Status |
+|---------|------------ |-------|-------|----------------|---------------|--------|
+| TC001 | Submit empty waste pickup form | D-001: Missing field validation | Go to Home → leave all fields empty → Click Submit | Validation errors should appear for all required fields | Date field doesn’t show error | ❌ Fail |
+| TC002 | Submit valid waste pickup form | - | Fill all required fields correctly → Click Submit | Form submitted successfully → Success message displayed | Works correctly | ✅ Pass |
+| TC003 | Filter requests by location | D-002: Filter mismatch |bOpen Dashboard → Apply filter “Eldoret” | Only Eldoret requests displayed | Shows Nairobi requests as well | ❌ Fail |
+| TC004 | Update request status in Admin Panel | D-003 – Admin status update doesn’t refresh UI | Open Admin Panel → Click "Mark as Scheduled" | UI should update immediately | UI doesn’t refresh automatically | ❌ Fail |
+| TC005 | Enter long text input | D-005 – Layout breaks with long text inputs | Enter 500+ characters in form fields → Submit | Layout should handle gracefully | Layout breaks slightly | ⚠️ Partial |
+| TC006 | Responsive design | - | Resize browser or open on mobile emulator | Layout adjusts correctly for all screen sizes | Works mostly fine | ✅ Pass |
+| TC007 | Feedback submission | - | Go to Feedback page → Enter valid Request ID → Submit | Success message displayed | Works correctly | ✅ Pass |
 
 ---
 
