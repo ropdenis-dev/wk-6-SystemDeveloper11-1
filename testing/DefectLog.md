@@ -7,4 +7,8 @@
 | D-003 | Admin status update doesn’t refresh UI | High | Admin Panel | Open |
 | D-004 | Images missing "alt" text | Medium | Awareness Page | Open |
 | D-005 | Layout breaks with long text inputs | Low | Forms | Open |
+<<<<<<< HEAD
+
+=======
+>>>>>>> upstream/main
 
