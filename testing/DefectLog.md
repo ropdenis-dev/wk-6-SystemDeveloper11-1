@@ -1,12 +1,5 @@
 # Phase 2 - Defect Log
 
-| Defect ID | Description | Severity | Page/Feature | Status |
-|--------|------------|---------|--------------|--------|
-| D-001 | Missing validation on date field | Medium | Home Form | Open |
-| D-002 | Filter by location displays wrong data | High | Dashboard | Open |
-| D-003 | Admin status update doesn’t refresh UI | High | Admin Panel | Open |
-| D-004 | Images missing "alt" text | Medium | Awareness Page | Open |
-| D-005 | Layout breaks with long text inputs | Low | Forms | Open |
 | Bug ID | Test Case | Description | Severity | Feature/Page | Steps to Reproduce | Expected Result | Actual Result | Status | Issue Link |
 |--------|-----------|-------------|----------|---------------|--------------------|-----------------|----------------|--------|------------|
 | BUG-001 | TC001 | Empty form submission is allowed | High | Waste Request Form | Open Home → Submit with all fields empty | Validation errors for all fields | Form submits or no errors | Open | [Link]() |
