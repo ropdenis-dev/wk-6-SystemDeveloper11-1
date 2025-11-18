@@ -37,7 +37,7 @@
 | TC031 | Logout during active form submission | Fill form partially → Click Logout | Session ends, unsaved data warning displayed |  | ❌ Fail  |
 | TC032 | Accessibility: screen reader | Navigate app with screen reader | All interactive elements are announced correctly | works as expected | Pass |
 | TC033 | Check error messages consistency | Trigger multiple validation errors | All messages clear, consistent, and visible |  | - |
-| TC034 | Role-based feature visibility | Login as different roles → View Admin Panel | Only authorized users see admin features | - | N|A |
+| TC034 | Role-based feature visibility | Login as different roles → View Admin Panel | Only authorized users see admin features | - | N/A |
 | TC035 | Responsive layout edge case | Open app on very small screen (e.g., 200 - 320px width) | Layout still readable, no overlap or hidden elements |  | ❌ Fail |
 | TC036 | Login with invalid password | Open login page → Enter valid email → Enter wrong password → Click Login | System should display error “Invalid username or password” and prevent login | System allows login :No error shown | ❌ Fail |
 | TC037 | Schedule requests disappear from dashboard analytics | Schedule a pickup and check Dashboard analytic counters  | Counters reflect the new request | Counters remain unchanged | ❌Fail |
