@@ -10,10 +10,10 @@
 | TC005 | Enter long text input | Enter 500+ characters in form fields → Submit | Layout should handle gracefully |works as expected | Pass|
 | TC006 | Responsive design | Resize browser or open on mobile emulator | Layout adjusts correctly for all screen sizes with no overlaps |  | 🚀TC 35 :REplaced  |
 | TC007 | Feedback submission with valid Request ID | Go to Feedback page → Enter valid Request ID → Submit | Success message displayed |  |  |
-| TC008 | Submit form with invalid email | Go to Home → Fill all fields → Enter invalid email → Submit | Validation error for email field |  |  |
-| TC009 | Submit form with invalid phone number | Enter invalid phone format → Submit | Validation error for phone number |  |  |
-| TC010 | Filter requests by status | Open Dashboard → Filter by “Scheduled” | Only requests with “Scheduled” status displayed |  |  |
-| TC011 | Search requests by Request ID | Go to Dashboard → Enter valid Request ID in search → Submit | Only matching request displayed |  |  |
+| TC008 | Submit form with invalid email | Go to Schedule Pickup page → Fill all fields → Enter invalid email → Submit | Validation error for email field | Form accepts partially invalid emails like user@com which is not technically valid| due to insufficience , ❌ Fai| Open |
+| TC009 | Submit form with invalid phone number | Enter invalid phone format → Submit | Validation error for phone number | Cannot test — phone number field not available in form |Not Testable |
+| TC010 | Filter requests by status | Open Dashboard → Filter by “Scheduled” | Only requests with “Scheduled” status displayed | Cannot test — no requests visible | ❌Blocked |
+| TC011 | Search requests by Request ID | Go to Dashboard → Enter valid Request ID in search → Submit | Only matching request displayed | Cannot test — no requests visible |⚠️Blocked |
 | TC012 | Update multiple request statuses | Admin Panel → Select multiple requests → Mark as Completed | All selected requests update status | Cannot test — no access to Admin Panel thus no requests visible | Blocked |
 | TC013 | Attach image to request | Fill Schedule a Waste Pickup form → Upload image as additional description  → Submit request | Image successfully attached and preview shown | No option available to attach image; upload not possible| ❌ Fail, Open |
 | TC014 | Delete a request | Admin Panel → Select request → Delete → Confirm | Request removed from Dashboard | Cannot test — no requests visible in Admin Panel | Blocked⚠️ |
