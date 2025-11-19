@@ -14,19 +14,19 @@
 | TC009 | Submit form with invalid phone number | Enter invalid phone format → Submit | Validation error for phone number |  |  |
 | TC010 | Filter requests by status | Open Dashboard → Filter by “Scheduled” | Only requests with “Scheduled” status displayed |  |  |
 | TC011 | Search requests by Request ID | Go to Dashboard → Enter valid Request ID in search → Submit | Only matching request displayed |  |  |
-| TC012 | Update multiple request statuses | Admin Panel → Select multiple requests → Mark as Completed | All selected requests update status |  |  |
-| TC013 | Attach image to request | Fill form → Upload image → Submit | Image successfully attached and preview shown |  |  |
-| TC014 | Delete a request | Admin Panel → Select request → Delete → Confirm | Request removed from Dashboard |  |  |
-| TC015 | Pagination in Dashboard | Navigate Dashboard → Click page 2 | Requests for page 2 displayed correctly |  |  |
-| TC016 | Sort requests by date | Dashboard → Click “Sort by Date” | Requests displayed in ascending/descending order |  |  |
-| TC017 | Feedback submission with invalid Request ID | Feedback page → Enter invalid Request ID → Submit | Error message displayed |  |  |
-| TC018 | Logout functionality | Click Logout | User redirected to login page, session cleared |  |  |
-| TC019 | Accessibility check | Navigate all pages with keyboard only | Focusable elements, ARIA labels, no inaccessible content |  |  |
-| TC020 | Submit form with past date | Enter a date in the past → Submit | Validation error displayed; cannot submit past dates |  |  |
-| TC021 | Submit form with future date beyond limit | Enter date more than 30 days ahead → Submit | Validation error displayed or warning shown |  |  |
-| TC022 | Attempt to submit duplicate request | Fill form with same details as an existing request → Submit | System prevents duplicate submission |  |  |
-| TC023 | User without admin rights tries to update status | Login as normal user → Attempt to mark request as Scheduled | Action denied; error message displayed |  |  |
-| TC024 | User notifications not received on status change | 1. Login as a normal user → 2. Monitor the Dashboard after a request status is updated in the system | User should receive an in-app notification when request status changes | No notification appears in the Dashboard | ❌ Fail |
+| TC012 | Update multiple request statuses | Admin Panel → Select multiple requests → Mark as Completed | All selected requests update status | Cannot test — no access to Admin Panel thus no requests visible | Blocked |
+| TC013 | Attach image to request | Fill Schedule a Waste Pickup form → Upload image as additional description  → Submit request | Image successfully attached and preview shown | No option available to attach image; upload not possible| ❌ Fail, Open |
+| TC014 | Delete a request | Admin Panel → Select request → Delete → Confirm | Request removed from Dashboard | Cannot test — no requests visible in Admin Panel | Blocked⚠️ |
+| TC015 | Pagination in Dashboard | Navigate Dashboard → Click page 2 | Requests for page 2 displayed correctly | Cannot test — pagination not available in current view | ⚠️Blocked |
+| TC016 | Sort requests by date | Dashboard → Click “Sort by Date” | Requests displayed in ascending or descending order | Cannot test — no requests visible | ⚠️Blocked |
+| TC017 | System accepts invalid Request ID in feedback form | Feedback page → Enter invalid Request ID →  enter feedback  → Submit | Error message should be displayed | Feedback submitted successfully with invalid ID no error shown | ❌ Fail, Open |
+| TC018 | Logout functionality | Click Logout | User redirected to login page, session cleared | User redirected successfully; session cleared | ✅ Pass |
+| TC019 | Accessibility check | Navigate all pages with keyboard only | Focusable elements, ARIA labels, no inaccessible content |  | - |
+| TC020 | System allows submission of past dates | Enter a date in the past → Submit | System should prevent submission and display validation error | ❌ Fail : Submission allowed; no error shown | Open |
+| TC021 | System allows submission of date beyond a year  limit | Enter date more than 300 days ahead → Submit | System should prevent submission and display validation error | Submission allowed; no error shown | ❌ Open |
+| TC022 | Attempt to submit duplicate request| Fill form with same details as an existing request → Submit | System should prevent duplicate submission | Duplicate request submitted successfully; system does not deny submission | ❌Fail, Open|
+| TC023 | User without admin rights tries to update status | Login as normal user → Navigate to request page → Attempt to mark request as “Scheduled” | Action denied; user cannot see options to update status | User cannot see or perform any status update actions | ✅Pass | N/A|
+| TC024 | User notifications not received on status change | Login as a normal user → Monitor the Dashboard after a request status is updated in the system | User should receive an in-app notification when request status changes | No notification appears in the Dashboard | ❌ Fail |
 | TC025 | File upload option missing in Feedback section | Open Feedback page → Look for file upload button | User should see “Attach File” or “Upload” option | No file upload feature available | ❌ Fail |
 | TC026 | No option available to change profile picture | Open Profile page → Look for edit profile picture option | User sees “Change Profile Picture” / “Upload Photo” button | No option exists; user cannot change picture | ❌Fail |
 | TC027 | Session timeout | Remain idle for 15+ minutes → Try action | Session expires; user redirected to login |  | Open ,❌ Fail  |
