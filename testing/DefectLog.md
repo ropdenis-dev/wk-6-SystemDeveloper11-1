@@ -44,7 +44,6 @@
 | BUG-038| TC038 | No notifications shown anywhere | High | User Dashboard | Make a request → Schedule → Update | Notification list updates | Notification panel empty nor email | Open | [BUG-038](https://github.com/PLP-Database-Design/wk-6-SystemDeveloper11-1/issues/12#issue-3634902912) |
 
 <<<<<<< HEAD
-| BUG-025 | TC025 | Missing File opload feature | Medium | File Upload | Upload 6MB+ image | Warning and rejection | Upload accepted | Open | [Link]() |
 
 
 =======
